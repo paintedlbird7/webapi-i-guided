@@ -69,7 +69,7 @@ server.put('/hubs/:id', (req, res) => {
         if (updated) {
         res.status(200).json(updated);
         } else {
-        res.status(404).json({ 'message: hub not found' });
+        res.status(404).json({ message: 'hub not found' });
         }
     })
     .catch(error => {
